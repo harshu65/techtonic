@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+/* THIS FILE CONTAINS STYLING FOR ABOUTME,FEED,TIPSNTRICKS */
+#lafeed,#bout,#trip{ /*---HEADINGS--latest feed,about me, tricks n tips */
+    font-family: 'DotGothic16', sans-serif;
+    color: rgb(3, 3, 81);
+    text-shadow: 2px 2px 0 cadetblue;
+    text-transform: uppercase;
+    text-indent:290px;   
+    cursor: default;
+}
+
+.boutd #boutimg{
+    z-index: 4; 
+    width: 147px; /* 147 */
+    height: 185px;
+    float: left;
+    border: 2px solid rgb(255, 255, 255); border-radius: 12px;
+}
+/*--PARA--About Me ,Latest feed  */
+.boutd2,.latestfeedp1,.tipsn{     
+    font-family: 'Trebuchet MS';
+    font-size: 22px;
+    /*font-family:'Raleway', sans-serif; */
+}
+.lfp2{font-family: 'Trebuchet MS';
+    font-size: 19px;
+}
+
+p{text-align: left;}
+/*star symbol */
+#bm:hover{
+    color: rgb(1, 23, 28);font-weight:bolder;
+}
+
+table tr td{
+    font-family: 'Trebuchet MS';font-size: 19px;
+}
+#specs{font-family: Helvetica, sans-serif;}/*specs heading */
+
+.headinn{/*video heading */
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*--------Responsiveness-FOR-ABOUTME-FEED-TIPS*/
+@media screen and (max-width: 425px) { 
+.boutd,.boutd .boutd2,.fd,.tipclas{margin-left: 0!important;}
+.boutd #bout,#lafeed,#trip{text-indent: 0!important;}
+h1{font-size: 20px;}p{font-size: 18px!important;}
+}
+
+@media screen and (max-width: 768px) { 
+    .boutd,.boutd .boutd2,.fd,.tipclas{margin-left: 0!important;}.fd,.tipclas{width: 100%!important;}
+    .boutd #bout,#lafeed,#trip{text-indent: 0!important;}
+}
