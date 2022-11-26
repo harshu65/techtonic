@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NMPU-W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/w3.css"> <!--W3.CSS FRamework file-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+<div class=" sidebor w3-text-light-grey w3-sidebar w3-black w3-bar-block w3-mobile" style="width:16.5%">
+    <h1 class="bartitle w3-bar-item w3-animate-left" style="cursor:context-menu;">&#60;<b>Tt</b>&#62; </h1>
+       <!--ADD w3-bottom  to push it down-->
+        <a href="../html/index.html" class="home  w3-large w3-bar-item w3-button w3-hover-none w3-hover-text-teal w3-mobile">&#9780; Home</a>
+        <a href="../html/feed.html#lafeed" class="w3-large w3-bar-item w3-button w3-hover-none w3-hover-text-teal w3-mobile w3-mobile">&#9832; Latest Feed</a>
+        <a href="../html/tipsntricks.html" class="w3-large w3-bar-item w3-button w3-hover-none w3-hover-text-teal w3-mobile">&#9854; Tips & Tricks</a>
+        <a href="#bout" class="w3-large w3-bar-item w3-button w3-hover-none w3-hover-text-teal w3-mobile">&#9957; About ME</a>
+        <a href="../html/index.html#cont" class="w3-large w3-bar-item w3-button w3-hover-none w3-hover-text-teal w3-mobile">&#9742; Contact</a>
+        <div class="w3-sidebar w3-bar-block w3-mobile" style="display:none; height: 80px;" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-mobile ">Close &times;</button>
+              <form action="" style="padding-left: 10px;">
+                  <input class="w3-mobile" type="text" placeholder="Search.." name="search" >
+              </form>
+          </div>
+          <div>
+              <button id="searchid" class="w3-button w3-xlarge w3-mobile" onclick="w3_open()" style="margin-top: 25px;">&#9862; SEARCH</button>
+          </div>  
+</div>
+
+<!-- Page Content -->
+<div id=homeid class="w3-mobile" style="margin-left:16.5%">
+        <div class="w3-container w3-teal w3-mobile">
+            <p class="title w3-mobile" style="cursor: context-menu;">TeCHToNIC</p>
+        </div>
+</div>
+
+<div class="boutd w3-container w3-margin-bottom w3-mobile " style="background-color:rgb(255, 255, 255); margin-left: 196px; ">
+     <!-- w3-border removed,cant define width in div ,comp wont -->
+        <h1 id="bout" class="w3-wide w3-left-align w3-mobile" style="text-indent:290px;"><b>About Me<span class="material-symbols-outlined"></span></b> ✦</h1>
+        
+        <div class="boutd2 w3-card-2 w3-padding w3-teal w3-round-xxlarge w3-mobile" style=" margin-bottom: 12.9%;"><!-- put width: 90%; border-radius: 9px; -->
+            <img class="w3-left w3-image" src="../IMAGES/photodup.png"  style="padding-right: 20px;width: 176px; height:195px; border-top-left-radius:19%;padding-top:10px; "> <!-- border-radius: 13px; border-top-left-radius:19%-->
+            <p class="w3-mobile" style="cursor: default;">Hi ! Everyone I’m Harsh, I live in Delhi-NCR I am a graduate from GGSIPU. I am pursuing my NIELIT-A LEVEL course from Delhi-Inderlok center.<br>I managed to built this website all by myself and with a strong presence of<br><b>Prof. Ms. Anita Mahajan</b>.<br>
+            I have never designed a fully responsive static-website on my own this is my very first time going hand-in-hand with w3css ,the sole purpose of this website in the first place is to deliver my honest and unbiased  opinions on latest technology gadgets available in the market.<br> 
+            I will try to update you guys about latest technologies and guide you to buy suitable tech. So, don’t forget to bookmark this page(<span id="bm">&#9734;</span>).
+            I’m a tech enthusiastic who’s compelling and self driven by futuristic developed gadgets .<br>
+                I also have a heart for artworks ,feel free to check out my social media handles .
+                <audio controls style="width:50%;">
+                    <source src="../audio/hello.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+            </p>
+        </div>
+</div>
+<!--Footer-->
+<footer id="foot" class="foot w3-container w3-center w3-margin-top w3-mobile" style="margin-left:16.5%; cursor: context-menu;">
+    <h5 class="w3-mobile"><b>Techtonic &copy; 2022-2023</b></h5>
+      
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      
+</footer>
+<script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.width = "16.5%";   //it'll show width of search bar
+        document.getElementById("mySidebar").style.display = "block"; //block
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      } 
+</script>
+</body>
+</html>
