@@ -4,7 +4,7 @@
     <title>NMPU-W3.CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="harsh">
-    <link rel="stylesheet" href="../css/w3.css"> <!--W3.CSS FRamework file-->
+    <link rel="stylesheet" href="css/w3.css"> <!--W3.CSS FRamework file-->
     <link rel="stylesheet" href="../css/style.css"> <!--CONTAINS styling except nav-->
     <link rel="stylesheet" href="../css/navstyle.css"> <!--CONTAINS navstyling -->
     <link rel="stylesheet" href="../css/gallerystyle.css"> <!--HOME PAGE GAL-->
